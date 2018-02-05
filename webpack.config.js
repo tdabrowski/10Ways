@@ -1,5 +1,5 @@
 module.exports	=	{
-	entry:	"./src/components/base/base.jsx",
+	entry:	"./src/components/app.jsx",
 	output:	{filename:"./js/main.js"},
 	devServer: {
 		inline: true,

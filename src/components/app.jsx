@@ -7,90 +7,58 @@ import {Router,
     IndexRoute,
     hashHistory
 } from 'react-router';
+import {BaseTemplate} from './baseTemplate.jsx';
+import {Home} from './home.jsx';
+
 
 
 document.addEventListener('DOMContentLoaded',function(){
 
-
-    class BaseTemplate extends React.Component {
-      render(){
-        const activeStyle={
-            backgroundColor: 'grey'
-        }
-        return (<header>
-            <div>
-                <span>10Ways</span>
-                <nav>
-                    <ul className="nav">
-                        <li>
-                            <IndexLink to="/" activeStyle={activeStyle}>Home.</IndexLink>
-                        </li>
-                        <li>
-                            <IndexLink to="/news" activeStyle={activeStyle}>News.</IndexLink>
-                        </li>
-                        <li>
-                            <IndexLink to="/work" activeStyle={activeStyle}>Work.</IndexLink>
-                        </li>
-                        <li>
-                            <IndexLink to="/about" activeStyle={activeStyle}>About.</IndexLink>
-                        </li>
-                        <li>
-                            <IndexLink to="/contact" activeStyle={activeStyle}>Contact.</IndexLink>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            {this.props.children}
-        </header>
-        );
-      }
-    }
-
     class News extends React.Component {
         render(){
-            return <h1>We are hiring</h1>
+            return <div>
+                <h1>We are hiring</h1>
+            </div>
         }
     }
 
     class Work extends React.Component {
         render(){
-            return <h1>We work hard to achieve success</h1>
+            return <div>
+                <h1>We work hard to achieve success</h1>
+            </div>
         }
     }
 
     class About extends React.Component {
         render(){
-            return <p>
-                Nullam augue lacus, tincidunt vitae vehicula vitae, viverra et nibh. Pellentesque vestibulum justo non mi vestibulum efficitur. Nullam iaculis magna ut quam tristique, eget congue justo congue. Pellentesque egestas risus sed nisl pulvinar ullamcorper. Nullam nec lorem sit amet lorem porta dapibus quis ac neque. Vestibulum egestas condimentum egestas. In in luctus justo, et venenatis ex. Sed in neque ut lectus dictum pulvinar id id nulla.
-            </p>
+            return <div>
+                <p>
+                    Nullam augue lacus, tincidunt vitae vehicula vitae, viverra et nibh. Pellentesque vestibulum justo non mi vestibulum efficitur. Nullam iaculis magna ut quam tristique, eget congue justo congue. Pellentesque egestas risus sed nisl pulvinar ullamcorper. Nullam nec lorem sit amet lorem porta dapibus quis ac neque. Vestibulum egestas condimentum egestas. In in luctus justo, et venenatis ex. Sed in neque ut lectus dictum pulvinar id id nulla.
+                </p>
+            </div>
         }
     }
 
     class Contact extends React.Component {
         render(){
-            return <p>
-                Phasellus nec purus lacus. Vivamus faucibus nisi nisi, a viverra urna lacinia et. Curabitur aliquam diam sit amet sapien euismod, eu ultrices turpis vulputate. Praesent in enim nec ante lobortis laoreet sit amet elementum augue.
-                <address>10ways@your.way</address>
-            </p>
+            return <div>
+                <p>
+                    Phasellus nec purus lacus. Vivamus faucibus nisi nisi, a viverra urna lacinia et. Curabitur aliquam diam sit amet sapien euismod, eu ultrices turpis vulputate. Praesent in enim nec ante lobortis laoreet sit amet elementum augue.
+                    10ways@your.way
+                </p>
+            </div>
         }
     }
 
     class None extends React.Component {
         render(){
-            return <h1>Sorry resources that you are looking for here doesn't exist</h1>
-        }
-    }
-
-
-    class Home extends React.Component {
-        render(){
-            return <div>
-                <p>We create future</p>
-                <h1>BEST SOLUTIONS<br />FOR YOUR COMPANY</h1>
-                <button>Learn more</button>
+            return <div className="container">
+                <h1>Sorry resources that you are looking for here doesn't exist</h1>
             </div>
         }
     }
+
 
     class Main extends React.Component {
         render(){
@@ -111,7 +79,7 @@ document.addEventListener('DOMContentLoaded',function(){
         render(){
             return (
                 <section>
-                    <div>
+                    <div className="container">
                         <div>
                             <div>
                                 <h3>
@@ -139,7 +107,7 @@ document.addEventListener('DOMContentLoaded',function(){
         render(){
             return (
                 <footer>
-                    <div>
+                    <div className="container">
                         <div>
                             <p>10WAYS</p>
                         </div>
