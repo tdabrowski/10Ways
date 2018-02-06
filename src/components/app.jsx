@@ -78,22 +78,22 @@ document.addEventListener('DOMContentLoaded',function(){
     class Section extends React.Component {
         render(){
             return (
-                <section>
+                <section className="secondSection">
                     <div className="container">
-                        <div>
-                            <div>
+                        <div className="row">
+                            <div className="col-lg-6">
                                 <h3>
                                     LEARN ABOUT<br/>
                                     OUR FANTASTIC <br/>
                                     HISTORY
                                 </h3>
                             </div>
-                            <div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In finibus vel augue quis fringilla. Etiam in porttitor mauris. Fusce odio arcu, bibendum posuere ante sed, laoreet condimentum diam. In nec eros id sapien iaculis dignissim. Vestibulum quis massa eu dolor condimentum pretium. Etiam venenatis dolor non lacinia consequat. Phasellus fringilla ligula at dui dapibus tincidunt. Morbi tortor dolor, dapibus in eleifend ac, sagittis eu massa. Aliquam quis suscipit libero.
+                            <div className="col-lg-6">
+                                <p className="topPar">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In finibus vel augue quis fringilla. Etiam in porttitor mauris. Fusce odio arcu, bibendum posuere ante sed, laoreet condimentum diam. In nec eros id sapien iaculis dignissim.
                                 </p>
-                                <p>
-                                    Donec condimentum, velit ac placerat porttitor, arcu libero sodales risus, sit amet elementum erat dolor nec turpis. Pellentesque tincidunt ante a nisi sollicitudin lobortis. Quisque accumsan imperdiet rhoncus. Integer et venenatis tellus. Maecenas sit amet diam lectus. Nunc nec fermentum lorem.
+                                <p className="bottomPar">
+                                    Donec condimentum, velit ac placerat porttitor, arcu libero sodales risus, sit amet elementum erat dolor nec turpis. Pellentesque tincidunt ante a nisi sollicitudin lobortis. Quisque accumsan imperdiet rhoncus. Integer et venenatis tellus.
                                 </p>
                             </div>
                         </div>

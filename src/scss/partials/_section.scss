@@ -1,0 +1,23 @@
+.secondSection {
+    min-height: 500px;
+    h3 {
+        margin-top:175px;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 50px;
+        margin-bottom: 175px;
+    }
+    .topPar, .bottomPar {
+        font-size: 16px;
+        font-weight: 400;
+        color: #b7b7b7;
+        line-height: 28px;
+    }
+    .topPar {
+        margin-top: 125px;
+    }
+    .bottomPar{
+        margin-top: 26px;
+        margin-bottom: 125px;
+    }
+}

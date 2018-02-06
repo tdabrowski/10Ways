@@ -11,3 +11,17 @@
     margin:0 auto;
     padding:0 5px;
 }
+
+.row {
+    &::before, &::after {
+        content: '';
+        clear:both;
+        display:table;
+    }
+}
+
+.col-lg-6 {
+    width: 50%;
+    float:left;
+    min-height: 1px;
+}
