@@ -1,0 +1,33 @@
+.footer {
+    height: 300px;
+    color: #474747;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    background-color: black;
+    span {
+        display: inline-block;
+        width:100px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        background-image: url(../images/logo.png);
+        margin-top: 27px;
+        margin: 35px 0;
+    }
+    ul {
+        list-style: none;
+        a {
+            color: #474747;
+            text-decoration: none;
+            &:active , &:visited {
+                color: #474747;
+            }
+        }
+    }
+    address {
+        color: #353434;
+        line-height: 30px;
+    }
+}

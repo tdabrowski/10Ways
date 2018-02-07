@@ -106,28 +106,28 @@ document.addEventListener('DOMContentLoaded',function(){
     class Footer extends React.Component {
         render(){
             return (
-                <footer>
+                <footer className="footer">
                     <div className="container">
-                        <div>
-                            <p>10WAYS</p>
+                        <div className="row">
+                            <span></span>
                         </div>
-                        <div>
-                            <div>
+                        <div className="row">
+                            <div className="col-lg-4">
                                 <ul>
                                     <li><a href="#">Production time</a></li>
                                     <li><a href="#">Questions and answers</a></li>
                                     <li><a href="#">Payment methods</a></li>
                                 </ul>
                             </div>
-                            <div>
+                            <div className="col-lg-4">
                                 <ul>
                                     <li><a href="#">Shipping information</a></li>
                                     <li><a href="#">Feedback</a></li>
                                     <li><a href="#">User agreement</a></li>
                                 </ul>
                             </div>
-                            <div></div>
-                            <div>
+                            <div className="col-lg-4"></div>
+                            <div className="col-lg-4">
                                 <address>10ways@your.way</address>
                             </div>
                         </div>
