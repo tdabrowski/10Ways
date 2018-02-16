@@ -1,5 +1,5 @@
 # 10Ways
-10Ways - simple site wrote in ReactJS and Sass.
+10Ways - simple site written in ReactJS and Sass.
 Built on the basis of RWD practices, with sample of React Router usage for main navigation.
 
 ## Demo
