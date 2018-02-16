@@ -24,9 +24,13 @@
             &:active , &:visited {
                 color: #474747;
             }
+            &:hover {
+                background-color: grey;
+            }
         }
     }
-    address {
+    a, a:active, a:visited {
+        text-decoration: none;
         color: #353434;
         line-height: 30px;
     }

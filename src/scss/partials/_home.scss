@@ -17,18 +17,21 @@
             line-height: 60px;
         }
     }
-    button {
+    .buttonLink{
         font-size: 20px;
         font-weight: 400;
-        color:white;
         background-color: red;
         border-radius: 5px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
         width:200px;
         height:70px;
+        color:white;
+        text-decoration: none;
         cursor: pointer;
-        border: none;
-        &:hover {
-            color: red;
+        &:hover{
+            color:red;
             background-color: white;
         }
     }
